@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stash - Coleção</title>
+    <!-- Fontawesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Isotope CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.css">
+    <!-- Customização CSS -->
+    <link rel="stylesheet" href="coleção.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex justify-content-between align-items-center" href="index.html">
+            <img src="/img/Logo Black.png" alt="site icons">
+            <span class="text-uppercase fw-bolder ms-2">STASH</span>
+        </a>
+        <div class="order-lg-2 nav-btns">
+            <button type="button" class="btn position-relative me-3">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"> 5 </span>
+            </button>
+            <button type="button" class="btn position-relative me-3">
+                <i class="fa fa-heart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"> 2 </span>
+            </button>
+            <button type="button" class="btn position-relative me-3">
+                <i class="fa fa-search"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"> 5 </span>
+            </button>
+        </div>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item me-4">
+                    <a class="nav-link text-uppercase text-dark fw-bolder" href="/index.html"> Home</a>
+                </li>
+
+                <li class="nav-item me-4">
+                    <a class="nav-link text-uppercase text-dark fw-bolder" href="#populares"> Populares</a>
+                </li>
+
+                <li class="nav-item me-4">
+                    <a class="nav-link text-uppercase text-dark fw-bolder" href="/coleção.html"> Produtos</a>
+                </li>
+
+                <li class="nav-item me-4">
+                    <a class="nav-link text-uppercase text-dark fw-bolder" href="/sobre.html"> Sobre</a>
+                </li>
+
+                <li class="nav-item me-4">
+                    <a class="nav-link text-uppercase text-dark fw-bolder" href="/contato.html"> Contato</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" data-bs-interval="7000" style="padding-top: 104px;">
+    <div class="container h-100 d-flex align-items-center carousel-inner">
+        <div class="text-center carousel-item active">
+            <h2 class="text-capitalize text-white"></h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white"></h1>
+        </div>
+        <div class="text-center carousel-item">
+            <h2 class="text-capitalize text-white"></h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white"></h1>
+        </div>
+    </div>
+<hr>
+    <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    </header>
+    <!-- Fim do Header -->
+
+ <!-- Começo aba pesquisa -->
+
+ <div class="search">
+    <label for="searchInput">
+
+                    <i class="fa fa-search"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"> 5 </span>
+
+    </label>
+    <input type="text" id="searchInput" placeholder="Pesquisar">
+</div>
+<div class="card-container">
+   
+</div>
+
+ <!-- Fim aba pesquisa -->
+        
+ <!-- Começo Coleção -->
+
+
+        <!-- Botões de Filtro -->
+        <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+            <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">Todos</button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".best">Melhores promoções</button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".feat">Ofertas</button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".new">Novas Coleções</button>
+        </div>
+
+        <!-- Lista de Produtos -->
+        <div class="collection-list mt-4 row gx-0 gy-3">
+            <!-- Produto Repetido -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                <div class="position-relative">
+                    <img src="img/camisa1collection.png" class="w-100" alt="Camisa Ctime">
+                    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Ctime</p>
+                    <span class="fw-bold text-dark">R$79,50</span>
+                </div>
+            </div>
+
+            <!-- Produto Repetido -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                <div class="collection-img position-relative">
+                    <img src="img/Camisola Branca - Promo.png" class="w-100" alt="Camisa Ctime">
+                    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Ctime</p>
+                    <span class="fw-bold">R$79,50</span>
+                </div>
+            </div>
+
+            <!-- Produto Repetido -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                <div class="collection-img position-relative">
+                    <img src="img/camisa Deemoon Ltters.png" class="w-100" alt="Camisa Ctime">
+                    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">-50%</span>
+                    
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Ctime</p>
+                    <span class="fw-bold">R$79,50</span>
+                </div>
+            </div>
+
+            <!-- Produto Repetido -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                <div class="collection-img position-relative">
+                    <img src="img/Rosa Collection Promo.png" class="w-100" alt="Camisa Ctime">
+                    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Ctime</p>
+                    <span class="fw-bold">R$79,50</span>
+                </div>
+            </div>
+
+            <!-- Produto Repetido -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                <div class="collection-img position-relative">
+                    <img src="img/Rosa Collection Promo.png" class="w-100" alt="Camisa Ctime">
+                    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Ctime</p>
+                    <span class="fw-bold">R$79,50</span>
+                </div>
+            </div>
+
+            <!-- Produto Repetido -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                <div class="collection-img position-relative">
+                    <img src="img/Rosa Collection Promo.png" class="w-100" alt="Camisa Ctime">
+                    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Ctime</p>
+                    <span class="fw-bold">R$79,50</span>
+                </div>
+            </div>
+
+            <!-- Produto Repetido -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                <div class="collection-img position-relative">
+                    <img src="img/Rosa Collection Promo.png" class="w-100" alt="Camisa Ctime">
+                    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Ctime</p>
+                    <span class="fw-bold">R$79,50</span>
+                </div>
+            </div>
+
+            <!-- Produto Repetido -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                <div class="collection-img position-relative">
+                    <img src="img/Rosa Collection Promo.png" class="w-100" alt="Camisa Ctime">
+                    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                </div>
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Ctime</p>
+                    <span class="fw-bold">R$79,50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fim da Coleção -->
+
+        
+    </body>

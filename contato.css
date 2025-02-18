@@ -1,0 +1,134 @@
+/* ===== Definição de Variáveis Globais ===== */
+:root {
+    --bg-color: #ffffff;
+    --second-bg-color: #ffffff;
+    --text-color: #000000;
+    --main-color: #ff0000; /* Vermelho */
+}
+/* NavBar */
+.navbar {
+    box-shadow: 0 5px 9px 3px rgba(10, 10, 10, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: #808080 !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+
+/* Personalização da página de contato */
+.contact {
+    background-color: var(--bg-color);
+    padding: 7rem 0;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact form .input-group {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact form .input-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 1.5rem;
+    border: 2px solid gray; /* Borda cinza */
+    margin: 1rem 0;
+    resize: none;
+}
+
+.contact form .input-group-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form .bnt {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form .bnt:hover {
+    background-color: rgb(58, 58, 58);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Começo do Footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--red) !important;
+}
+
+footer .list-unstyled a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .list-unstyled a:hover {
+    color: var(--red) !important;
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}

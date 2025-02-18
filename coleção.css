@@ -1,0 +1,340 @@
+* {
+    scroll-behavior: smooth;
+   
+}
+
+/* Botões */
+.bg-primary {
+    background-color: #000 !important; /* Fundo preto */
+    color: #fff !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
+.btn {
+    background-color: #ffffff !important; /* Fundo preto */
+    color: #000000 !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
+.btn:hover {
+    background-color: #dcdcdc !important; /* Hover cinza */
+    color: #ffffff !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
+/* Cor das estrelas e corações */
+.text-primary {
+    color: yellow !important;
+}
+
+/* NavBar */
+.navbar {
+    box-shadow: 0 5px 9px 3px rgba(10, 10, 10, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: #808080 !important;
+}
+
+.nav-item {
+    border-bottom: 7    .5px solid rgba(0, 0, 0, 0.05);
+}
+
+
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border: none !important; /* Sem borda */
+}
+
+.carousel-item .btn:hover {
+    background-color: #808080 !important; /* Hover cinza */
+    border: none !important; /* Sem borda */
+}
+
+/* Título */
+.tittle h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: gray;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Coleção */
+.active-filter-btn {
+    background-color: rgb(227, 223, 223) !important;
+    color: rgb(0, 0, 0) !important;
+    border-color: black !important;
+    
+}
+
+.filter-button-group .btn:hover {
+    color: #000000 !important;
+}
+
+/* Roupa Especial */
+.special-img {
+    position: relative;
+}
+
+.special-img span {
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.special-list .btn {
+    padding: 8px 20px !important;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #000 !important; /* Fundo preto */
+    color: #fff !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
+.special-list .btn:hover {
+    background-color: #808080 !important; /* Hover cinza */
+    color: #fff !important; /* Texto branco */
+}
+
+.special-img img {
+    transition: transform 0.2s ease;
+}
+
+.special-img:hover img {
+    transform: scale(1.1);
+}
+
+/* Roupa Desconto */
+#offers {
+    background: url(img/Stash\ Banner\ PERFEITO.png) center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#offers .row {
+    min-height: 60vh;
+}
+
+.offers-content span {
+    font-size: 28px;
+}
+
+.offers-content h2 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.offers-content .btn {
+    background-color: #000 !important; /* Fundo preto */
+    color: #fff !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
+.offers-content .btn:hover {
+    background-color: #808080 !important; /* Hover cinza */
+    border: none !important; /* Sem borda */
+}
+
+/* Sobre Nós */
+#about {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Novidades */
+#novidades {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+#novidades p {
+    max-width: 600px;
+}
+
+#novidades .input-group {
+    max-width: 500px;
+}
+
+#novidades .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#novidades .btn {
+    background-color: #000 !important; /* Fundo preto */
+    color: #fff !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
+#novidade .btn:hover {
+    background-color: #808080 !important; /* Hover cinza */
+    border: none !important; /* Sem borda */
+}
+
+/* Outros estilos continuam os mesmos */
+.collection-img span {
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+/* Começo Enviar E-mail */
+#novidades {
+    background-color: rgb(255, 255, 255);
+}
+
+#novidades p {
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o texto */
+}
+
+#novidades .input-group {
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o grupo de input */
+}
+
+#novidades .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#novidades .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#novidades .btn:hover {
+    background-color: #808080; /* Hover cinza */
+    color: white;
+    border: none;
+}
+
+
+/* Começo do Footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--red) !important;
+}
+
+footer .list-unstyled a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .list-unstyled a:hover {
+    color: var(--red) !important;
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #00000006;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #4b4b4b;
+
+}
+
+#searchInput{
+    padding: 8x;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+
+}
+
+.search label{
+    height: 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.01);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

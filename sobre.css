@@ -1,0 +1,52 @@
+/* Começo do Footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--red) !important;
+}
+
+footer .list-unstyled a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .list-unstyled a:hover {
+    color: var(--red) !important;
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+/* NavBar */
+.navbar {
+    box-shadow: 0 5px 9px 3px rgba(10, 10, 10, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: #808080 !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+

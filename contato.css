@@ -27,6 +27,25 @@
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
+/* Botões */
+.bg-primary {
+    background-color: #000 !important; /* Fundo preto */
+    color: #fff !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
+.btn {
+    background-color: #ffffff !important; /* Fundo preto */
+    color: #000000 !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
+.btn:hover {
+    background-color: #dcdcdc !important; /* Hover cinza */
+    color: #ffffff !important; /* Texto branco */
+    border: none !important; /* Sem borda */
+}
+
 
 /* Personalização da página de contato */
 .contact {

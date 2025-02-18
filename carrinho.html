@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stash - Coleção</title>
+    <title>Loja online</title>
     <!-- Fontawesome Cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Bootstrap -->
@@ -11,10 +11,12 @@
     <!-- Isotope CSS -->
     <link rel="stylesheet" href="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.css">
     <!-- Customização CSS -->
-    <link rel="stylesheet" href="coleção.css">
+    <link rel="stylesheet" href="carrinho.css">
     
+
 </head>
 <body>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
     <div class="container">
@@ -71,95 +73,57 @@
 
         <!-- Fim da NavBar -->
 
-    <!-- Header -->
-    <header>
-        <img src="img/propaganda1.png" alt="Banner de Coleção" class="w-100" />
-        <!-- Barra de pesquisa -->
-        <div class="search-bar">
-          <input type="text" id="search" class="form-control" placeholder="Pesquisar produtos..." />
+<br><br><br><br><br>
 
-        </div>
-      </header>
-    <!-- Fim do Header -->
-        
- <!-- Começo Coleção -->
-
-
-       <!-- Filtros -->
-<div class="filters text-center py-3">
-    <button class="btn btn-outline-primary" id="filter-all">Todos</button>
-    <button class="btn btn-outline-primary" id="filter-best">Melhores Ofertas</button>
-    <button class="btn btn-outline-primary" id="filter-new">Novas Coleções</button>
-    <button class="btn btn-outline-primary" id="filter-sale">Promoções</button>
-</div>
-
-<!-- Produtos -->
-<div class="container">
-    <div class="row" id="products">
-        <!-- Produto 1 (Melhores Ofertas) -->
-        <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
-            <div class="collection-img position-relative">
-                <img src="img/2.png" class="w-100" alt="Camisa Ctime">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+    <!-- Seção de Carrinho -->
+    <section class="carrinho">
+        <div class="container">
+            <h2 class="tittle">Carrinho de Compras</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Exemplo de produto no carrinho -->
+                        <tr>
+                            <td>Camisa Exemplo</td>
+                            <td class="price">R$ 79,99</td>
+                            <td>
+                                <input type="number" class="form-control quantity" value="1" min="1">
+                            </td>
+                            <td class="total-price">R$ 79,99</td>
+                            <td>
+                                <button class="btn-danger">Remover</button>
+                            </td>
+                        </tr>
+                        
+                        <!-- Adicione mais produtos aqui -->
+                    </tbody>
+                </table>
             </div>
-            <div class="text-center">
-                <div class="rating mt-3">
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <a href="/coleção.html" class="btn bg-primary">Continuar Comprando</a>
                 </div>
-                <p class="text-capitalize my-1">Camisa Ctime</p>
-                <span class="fw-bold text-dark">R$79,50</span>
-            </div>
-        </div>
-
-        <!-- Produto 2 (Novas Coleções) -->
-        <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
-            <div class="collection-img position-relative">
-                <img src="img/3.png" class="w-100" alt="Camisa Ctime">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">-50%</span>
-            </div>
-            <div class="text-center">
-                <div class="rating mt-3">
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                <div class="col-md-4 text-end">
+                    <h4>Total: <span id="total">R$ 79,99</span></h4>
+                    <a href="#checkout" class="btn bg-primary">Finalizar Compra</a>
                 </div>
-                <p class="text-capitalize my-1">Camisa Esportiva</p>
-                <span class="fw-bold">R$59,99</span>
             </div>
         </div>
+    </section>
+<br><br><br><br><br>
 
-        <!-- Produto 3 (Promoção) -->
-        <div class="col-md-6 col-lg-4 col-xl-3 p-2 sale">
-            <div class="collection-img position-relative">
-                <img src="img/4.png" class="w-100" alt="Camisa Casual">
-                <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Promoção</span>
-            </div>
-            <div class="text-center">
-                <div class="rating mt-3">
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                    <span class="text-primary"><i class="fas fa-star"></i></span>
-                </div>
-                <p class="text-capitalize my-1">Camisa Casual</p>
-                <span class="fw-bold">R$99,90</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Fim da Coleção -->
-<br><br>
-   <!-- Começo Sessão Footer -->
-   <footer class="bg-dark py-5">
+  <!-- Começo Sessão Footer -->
+  <footer class="bg-dark py-5">
     <div class="container">
         <div class="row text-white g-4">
             <div class="col-md-6 col-lg-3">
@@ -290,8 +254,7 @@
             $(this).addClass('active-filter-btn');
         });
     });
-
 </script>
-<script src="/coleção.js"></script>
+<script src="/bootstrap-5.0.2-dist/js/script.js"></script>
 </body>
 </html>

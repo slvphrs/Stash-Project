@@ -10714,3 +10714,64 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
+
+//COMEÇO CARRINHO
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Função para atualizar o total
+    function updateTotal() {
+        let total = 0;
+        // Seleciona todas as linhas da tabela do carrinho
+        const rows = document.querySelectorAll("tbody tr");
+
+        rows.forEach(row => {
+            const price = parseFloat(row.querySelector(".price").textContent.replace("R$ ", "").replace(",", "."));
+            const quantity = row.querySelector(".quantity").value;
+            total += price * quantity;
+            
+            // Atualiza o total de cada item (total item = preço * quantidade)
+            row.querySelector(".total-price").textContent = `R$ ${(price * quantity).toFixed(2).replace(".", ",")}`;
+        });
+
+        // Atualiza o total geral
+        document.getElementById("total").textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
+    }
+
+    // Remover item
+    function removeItem(button) {
+        const row = button.closest("tr");
+        row.remove();
+        updateTotal();
+    }
+
+    // Alterar quantidade
+    function changeQuantity(input) {
+        input.addEventListener("change", function() {
+            if (input.value < 1) input.value = 1; // Não permitir quantidade menor que 1
+            updateTotal();
+        });
+    }
+
+    // Seleciona todos os botões de "Remover"
+    const removeButtons = document.querySelectorAll(".btn-danger");
+    removeButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            removeItem(button);
+        });
+    });
+
+    // Seleciona todos os inputs de quantidade e adiciona evento para mudar o total
+    const quantityInputs = document.querySelectorAll(".form-control");
+    quantityInputs.forEach(input => {
+        changeQuantity(input);
+    });
+
+    // Atualiza o total inicial ao carregar a página
+    updateTotal();
+});
+
+//FIM CARRINHO
+
+
+
+
